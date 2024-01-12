@@ -12,14 +12,10 @@ from testCases.base_test import BaseTest
 
 class TestLogin(BaseTest):
 
-    def test_valid_credits(self):
-      home_page = HomePage(self.driver)
-      login_page=LoginPage(self.driver)
-
-      login_page.login_with_email_and_password("emir","makas")
+  
 
 
-    def test_invalid_credits(self):
+    def test_case_001(self):
         home_page = HomePage(self.driver)
         careers_page = CareersPage(self.driver)
         careers_qa_page = CareersQaPage(self.driver)
